@@ -1,29 +1,62 @@
-document.writeln("<html>");
-document.writeln("<head>");
-document.writeln("<title>Student Login Form</title>");
-document.writeln("</head>");
-document.writeln("<body>");
-document.writeln("<form method=\"\" action=\"\">");
-document.writeln("<table border=\"1\" align=\"center\" width=\"400\" bgcolor=\"#CCCCCC\" >");
-document.writeln("<caption>Login form</caption>");
-document.writeln("<tr>");
-document.writeln("<th>Username or email</th>");
-document.writeln("<td><input type=\"text\" name=\"fn\" id=\"fn1\" maxlength=\"10\" title=\"username or email\"></td>");
-document.writeln("</tr>");
-document.writeln("<tr>");
-document.writeln("<th>Enter your password</th>");
-document.writeln("<td><input type=\"password\"/></td>");
-document.writeln("</tr>");
-document.writeln("<tr>");
-document.writeln("<td>");
-document.writeln("keep me signed in<input type=\"radio\" name=\"g\" value=\"m\"/>");
-document.writeln("</td>");
-document.writeln("</tr>");
-document.writeln("<tr>");
-document.writeln("<td colspan=\"2\" align=\"center\"><input type=\"button\" value=\"Login\"/>");
-document.writeln("</td>");
-document.writeln("</tr>");
-document.writeln("</table>");
-document.writeln("</form>");
-document.writeln("</body>");
-document.writeln("</html>");
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: lightpurple;  
+}  
+button {   
+       background-color: #E6E6FA;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #C8A2C8;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lavender;  
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h1> Student Login </h1> </center>   
+    <form>  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit">Login</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            Forgot <a href="#"> password? </a>   
+        </div>   
+    </form>     
+</body>     
+</html> 
