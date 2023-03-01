@@ -1,38 +1,49 @@
-document.writeln("<td><input type=\"password\"/></td>");
-document.writeln("</tr>");
-document.writeln("<tr>");
-document.writeln("<th>Re-Enter your password</th>");
-document.writeln("<td><input type=\"password\"/></td>");
-document.writeln("</tr>");
-document.writeln("<tr>");
-document.writeln("<th>Enter your mobile</th>");
-document.writeln("<td><input type=\"number\"/></td>");
-document.writeln("</tr>");
-document.writeln("<tr>");
-document.writeln("<th>Enter your email</th>");
-document.writeln("<td><input type=\"email\"/></td>");
-document.writeln("</tr>");
-document.writeln("<tr>");
-document.writeln("<th>Enter your address</th>");
-document.writeln("<td><textarea rows=\"8\" cols=\"20\"></textarea></td>");
-document.writeln("</tr>");
-document.writeln("<tr>");
-document.writeln("<th>Select your DOB</th>");
-document.writeln("<td><input type=\"date\"/></td>");
-document.writeln("</tr>");
-document.writeln("<t");
-document.writeln("<th>Enter your State</th>");
-document.writeln("<td><input type=\"text\"/></td>");
-document.writeln("</tr>");
-document.writeln("<tr>");
-document.writeln("<th>Upload your pic</th>");
-document.writeln("<td><input type=\"file\"/></td>");
-document.writeln("</tr>");
-document.writeln("<tr>");
-document.writeln("<td colspan=\"2\" align=\"center\"><input type=\"button\" value=\"Submit\"/>");
-document.writeln("</td>");
-document.writeln("</tr>");
-document.writeln("</table>");
-document.writeln("</form>");
-document.writeln("</body>");
-document.writeln("</html>");
+<Html>  
+<head>   
+<title>  
+Registration Page  
+</title>  
+</head>  
+<body bgcolor="lavender">  
+<br>  
+<br>  
+<form>  
+  
+<label> Firstname </label>         
+<input type="text" name="firstname" size="15"/> <br> <br>  
+<label> Middlename: </label>     
+<input type="text" name="middlename" size="15"/> <br> <br>  
+<label> Lastname: </label>         
+<input type="text" name="lastname" size="15"/> <br> <br>  
+
+<label>   
+Gender :  
+</label><br>  
+<input type="radio" name="male"/> Male <br>  
+<input type="radio" name="female"/> Female <br>  
+<input type="radio" name="other"/> Other  
+<br>  
+<br>  
+  
+<label>   
+Phone :  
+</label>  
+<input type="text" name="country code"  value="+1" size="1"/>   
+<input type="text" name="phone" size="10"/> <br> <br>  
+Address  
+<br>  
+<textarea cols="80" rows="5" value="address">  
+</textarea>  
+<br> <br>  
+Email:  
+<input type="email" id="email" name="email"/> <br>    
+<br> <br>  
+Password:  
+<input type="Password" id="pass" name="pass"> <br>   
+<br> <br>  
+Re-type password:  
+<input type="Password" id="repass" name="repass"> <br> <br>  
+<input type="button" value="Submit"/>  
+</form>  
+</body>  
+</html>
